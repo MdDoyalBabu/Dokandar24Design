@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3B000000"
+    tools:context=".SellerProfileActivity.ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimage"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/profileimage"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/phone"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/name"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:id="@+id/joiningDate"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/joiningDate"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/blackDark"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cashBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/cashBalance"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/addBalance"
+            android:textAllCaps="false"
+            android:background="@drawable/add_balance_btn"
+            android:layout_marginTop="15dp"
+            android:text="@string/addBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+
+
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/sendBalance"
+            android:textAllCaps="false"
+            android:background="@drawable/send_balance_btn"
+            android:layout_marginTop="15dp"
+            android:text="@string/sendBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/blackDark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:id="@+id/allorders"
+            android:textAllCaps="false"
+            android:background="@color/nil"
+            android:layout_marginTop="15dp"
+            android:text="@string/allorfder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:id="@+id/pendingDelivery"
+            android:textAllCaps="false"
+            android:background="@color/red"
+            android:layout_marginTop="15dp"
+            android:text="@string/pendingDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:id="@+id/deliveredOrder"
+            android:textAllCaps="false"
+            android:background="@color/green"
+            android:layout_marginTop="15dp"
+            android:text="@string/DeliveryOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/blackDark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:id="@+id/create_shop"
+        android:textAllCaps="false"
+        android:background="@drawable/create_online_shop_btn"
+        android:layout_marginTop="15dp"
+        android:text="@string/createAnOnlineShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</LinearLayout>

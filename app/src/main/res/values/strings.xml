@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Dokandar24Design</string>
+    <string name="dokandar24_com">Dokandar24.com</string>
+    <string name="title_activity_seller_login">SellerLoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <string name="agentText">Agent Login</string>
+
+    <string name="agentName">Agent Name</string>
+    <string name="withdrawbtn">Withdraw</string>
+    <string name="agentphoneNumber">Enter Agent Phone Number</string>
+    <string name="password1">Password</string>
+    <string name="login1">Login</string>
+    <string name="forgotPassword">Forgot Password</string>
+    <string name="checkbox">Remember Me</string>
+    <string name="donthavAcccount">Dont Have An Account</string>
+    <string name="createAccount">Create Accont</string>
+
+
+    <string name="sendmony">SEND MONEY</string>
+    <string name="casbalanceTtile">Cash Balance Send</string>
+    <string name="casbalancewithdraw">Cash Balance Withdraw</string>
+    <string name="availableShop">You Available Shop Balance:1015</string>
+    <string name="selectype">Select Withdraw Type</string>
+    <string name="EnterAmount">Enter Amount</string>
+
+    <string name="typeCashBalance">Type-Cash Balance -</string>
+    <string name="amount">Amount  -</string>
+    <string name="payWith">Pay With -</string>
+    <string name="reciverNumber">Receiver Number -</string>
+    <string name="newBalance">New Balance -</string>
+    <string name="downloadInvoice">DOWNLOAD INVOICE -</string>
+
+
+    <string name="phone">Phone :</string>
+    <string name="name">Name :</string>
+    <string name="joiningDate">Joining Date :</string>
+    <string name="cashBalance">Cash Balance : 9,000</string>
+    <string name="addBalance">Add Balance </string>
+    <string name="sendBalance">Send Balance</string>
+    <string name="allorfder">All Order</string>
+    <string name="allProducts">All Products</string>
+    <string name="pendingDelivery">pendingDelivery</string>
+    <string name="DeliveryOrder">Delivered Order</string>
+    <string name="createAnOnlineShop">Create An Online Shop</string>
+
+    <string name="senderphone">sender phone </string>
+    <string name="trxlId">Trxl ID</string>
+
+    <string name="sendMoneytoTheUser">Send Money To The User</string>
+    <string name="sendMoney"> SEND MONEY </string>
+    <string name="bkash">BKASH</string>
+    <string name="bank">BANK</string>
+    <string name="submit">SUBMIT</string>
+
+    <string name="details">My startCreation is trying to call external file/directory picker. If it is missing call show installResultMessage function.
+    My startCreation is trying to call external file/directory picker. If it is missing call show installResultMessage function</string>
+
+
+    <string name="transctionRecipt">Transaction recipt</string>
+    <string name="chosefile">Chose file</string>
+
+
+    <string name="district">District</string>
+    <string name="shopcode">Shop Code</string>
+    <string name="paymentWith">Payment with-</string>
+    <string name="email">Email</string>
+    <string name="thana">Thana</string>
+    <string name="area">Area</string>
+    <string name="houseRoadNo">House/Road no.</string>
+    <string name="homeaddress">Home Address</string>
+    <string name="primary">Primary</string>
+    <string name="selectCountry">Select Country</string>
+
+
+    <string name="shopBalance">Shop Balance</string>
+    <string name="sellBalance">Sell Balance</string>
+    <string name="bonusBalance">Bonus Balance</string>
+
+
+    <string name="refferalshopid">Refeerral Shop Id</string>
+    <string name="shopname">Shop Name</string>
+    <string name="shopDescription">Shop Description</string>
+    <string name="shoplocation">Shop Location</string>
+    <string name="shoplogo">Shop Logo</string>
+    <string name="shopbanner">Shop Banner</string>
+    <string name="chosefile1">Chose File</string>
+    <string name="acceot">Accept</string>
+    <string name="createShop">Create Shop</string>
+    <string name="addProducts">Add Products</string>
+    <string name="dsfjkhasdkjf">asdflkjas;dlf</string>
+    <string name="pendingOrdewr">Pending Order</string>
+    <string name="accept_order">Accept Order</string>
+    <string name="successfully_delivery_order">Successfully Delivery Order</string>
+    <string name="add_product_image">Add Product Image</string>
+    <string name="product_name">Product Name</string>
+    <string name="description">Description</string>
+    <string name="discount">Discount %</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="add">ADD</string>
+    <string name="price">Price</string>
+    <string name="open">Open navigation</string>
+    <string name="close">Close navigation</string>
+    <string name="enter_your_phone_number">Enter Your Phone Number</string>
+    <string name="password">Password</string>
+    <string name="name1">name</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="registered">Registered</string>
+    <string name="one_1000">1000</string>
+    <string name="withdraw_balance">Withdraw Balance</string>
+    <string name="dokandar_24_com">DokanDar 24.com</string>
+    <string name="shop_balance_send">Shop Balance Send</string>
+    <string name="shop_balance_withdraw">Shop Balance Withdraw</string>
+    <string name="login">Login</string>
+    <string name="shop_id">Shop Id</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="shop_location">Shop Location</string>
+    <string name="withdraw_with">Withdraw With-</string>
+    <string name="withdraw_with_nagad">Withdraw With Nagad</string>
+    <string name="nagad_number">Nagad Number</string>
+    <string name="personal_agent">personal / agent</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="enter_receiver_number">Enter Receiver Number</string>
+    <string name="account_type">Account Type</string>
+    <string name="add_agent">ADD AGENT</string>
+    <string name="all_agent_list">ALL AGENT LIST</string>
+
+
+</resources>

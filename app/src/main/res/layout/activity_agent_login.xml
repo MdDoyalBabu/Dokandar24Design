@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDD6D6"
+    tools:context=".SellerActivity.SellerLoginActivity">
+
+
+
+    <ScrollView
+
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="8dp"
+            app:contentPadding="5dp"
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:id="@+id/linearLaout_main"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_marginTop="2dp"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Agent Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <EditText
+                    android:inputType="number"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="35dp"
+                    android:id="@+id/phoneNumber"
+                    android:hint="@string/enter_your_phone_number"
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:inputType="numberPassword"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/password"
+                    android:hint="@string/password"
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <CheckBox
+                    android:layout_marginTop="25dp"
+                    android:id="@id/checkbox"
+                    android:text="@string/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:linksClickable="true"
+                    android:text="@string/forgotPassword" />
+
+
+
+                <Button
+
+                    android:id="@+id/login_button_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/btn"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="#fff">
+
+                </Button>
+
+
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_marginBottom="50px"
+                    android:textColor="#1B0303"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:id="@+id/create_account_agent"
+                    android:layout_marginTop="10dp"
+                    android:text="Don\'t Have An Account?Create Acount "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+
+</RelativeLayout>

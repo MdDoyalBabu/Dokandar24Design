@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="#AA9494"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/apple"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/profileImage"
+        android:text="@string/dokandar24_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        style="@style/line"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textview"
+        android:layout_width="match_parent"/>
+
+
+
+</RelativeLayout>

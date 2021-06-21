@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#DDD6D6">
+
+
+    <ScrollView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+
+            app:cardCornerRadius="8dp"
+            app:contentPadding="5dp"
+            android:layout_margin="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLaout_main"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="@string/withdraw_with_nagad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:text="@string/details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/nagad_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:hint="@string/enter_receiver_number"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:id="@+id/reciveNumber_nagad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/account_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:hint="@string/personal_agent"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:id="@+id/accountType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:text="Receiver NID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/file_NID"
+                    android:textAllCaps="false"
+                    android:text="Chose file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:text="Receiver Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/file_image"
+                    android:textAllCaps="false"
+                    android:text="Chose file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <Button
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:id="@+id/sendmony"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/nil"
+                    android:text="@string/confirm"
+                    android:textAllCaps="false"
+                    android:textColor="#fff">
+
+                </Button>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+
+</RelativeLayout>
