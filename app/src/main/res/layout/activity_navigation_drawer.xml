@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
-    android:background="@color/white"
+    android:background="#424242"
     tools:context=".NavigationDrawer">
 
 
@@ -24,7 +24,7 @@
 
                 android:fontFamily="cursiv "
                 app:navigationIcon="@drawable/sideicon"
-                android:background="@color/dark"
+                android:background="@color/white"
                 app:title="Dokandar24.com"
                 android:id="@+id/tollbar"
                 android:layout_width="match_parent"
@@ -33,7 +33,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
         <TextView
-            android:textColor="@color/dark"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"

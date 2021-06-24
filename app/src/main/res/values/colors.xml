@@ -21,5 +21,14 @@
     <color name="yellow">#FDD835</color>
     <color name="dark2">#575652</color>
 
+    <color name="BackgroundDark">#696969</color>
+
+    <color name="colorPrimary">#efeeee</color>
+    <color name="colorPrimaryDarj">#efeeee</color>
+    <color name="colorAcent">#efeeee</color>
+
+    <color name="darkBlack">#07040A</color>
+
+
 
 </resources>

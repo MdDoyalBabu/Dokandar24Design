@@ -1,6 +1,7 @@
 package com.example.dokandar24design.AgetProfileMainActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -14,13 +15,26 @@ public class AgentUpdateProfileActivity extends AppCompatActivity {
     private EditText email,thana,area,houseRoad,homeAddress;
     private Button primary_btn;
     private Spinner countryName,region;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agent_update_profile);
 
+        titleMethod();
+
         init();
+
+    }
+
+    private void titleMethod() {
+
+        mToolbar=findViewById(R.id.update_appbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle("Update Profile");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
     }
 

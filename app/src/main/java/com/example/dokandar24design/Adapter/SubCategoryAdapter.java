@@ -52,12 +52,14 @@ public class SubCategoryAdapter extends RecyclerView.Adapter<SubCategoryAdapter.
         return subCategorys.length;    }
 
     public class MyViewHolder extends  RecyclerView.ViewHolder{
+
         private TextView categoryTextView,subCategoryTextview;
         private RecyclerView recyclerView;
+
         public MyViewHolder(@NonNull  View itemView) {
             super(itemView);
-            recyclerView=itemView.findViewById(R.id.subCategoryRecyclerView);
 
+            recyclerView=itemView.findViewById(R.id.subCategoryRecyclerView);
             categoryTextView=itemView.findViewById(R.id.categoryTextView);
             subCategoryTextview=itemView.findViewById(R.id.subCategoryTextView);
 

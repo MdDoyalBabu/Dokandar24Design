@@ -1,6 +1,7 @@
 package com.example.dokandar24design.SellerProfileActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,12 +19,15 @@ public class SellerUpdateWithdrawSettingActivity extends AppCompatActivity {
     private LinearLayout linearLayout;
 
     private View mBkash,mBank,mNagad,mCash;
+    private Toolbar mToolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller_update_withdraw_setting);
 
+        titleMethod();
 
         init();
 
@@ -57,6 +61,16 @@ public class SellerUpdateWithdrawSettingActivity extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    private void titleMethod() {
+
+        mToolbar=findViewById(R.id.login_appbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle("Login");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
     }
 

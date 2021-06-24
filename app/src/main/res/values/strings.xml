@@ -70,7 +70,7 @@
 
 
     <string name="district">District</string>
-    <string name="shopcode">Shop Code</string>
+    <string name="shopcode">Shop Code : 234651234</string>
     <string name="paymentWith">Payment with-</string>
     <string name="email">Email</string>
     <string name="thana">Thana</string>
@@ -111,7 +111,6 @@
     <string name="open">Open navigation</string>
     <string name="close">Close navigation</string>
     <string name="enter_your_phone_number">Enter Your Phone Number</string>
-    <string name="password">Password</string>
     <string name="name1">name</string>
     <string name="enter_your_name">Enter Your Name</string>
     <string name="registered">Registered</string>
@@ -120,7 +119,7 @@
     <string name="dokandar_24_com">DokanDar 24.com</string>
     <string name="shop_balance_send">Shop Balance Send</string>
     <string name="shop_balance_withdraw">Shop Balance Withdraw</string>
-    <string name="login">Login</string>
+    <string name="login">Seller Login</string>
     <string name="shop_id">Shop Id</string>
     <string name="shop_name">Shop Name</string>
     <string name="shop_location">Shop Location</string>
@@ -133,6 +132,10 @@
     <string name="account_type">Account Type</string>
     <string name="add_agent">ADD AGENT</string>
     <string name="all_agent_list">ALL AGENT LIST</string>
+    <string name="send_money">Send money</string>
+    <string name="password">Password</string>
+    <string name="name_1">Name</string>
+    <string name="enter_amount">Enter Amount</string>
 
 
 </resources>

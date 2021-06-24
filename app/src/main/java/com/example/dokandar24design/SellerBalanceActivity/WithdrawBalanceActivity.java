@@ -15,6 +15,7 @@ public class WithdrawBalanceActivity extends AppCompatActivity {
 
 
     private EditText selectWithdraw,amount;
+    private Toolbar mToolbar;
 
 
     @Override
@@ -22,6 +23,7 @@ public class WithdrawBalanceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_withdraw_balance);
 
+        titleMethod();
 
         initi();
 
@@ -32,6 +34,15 @@ public class WithdrawBalanceActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void titleMethod() {
+
+        mToolbar=findViewById(R.id.withdraw_appbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle("Withdraw Balance");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
 
     private void initi() {

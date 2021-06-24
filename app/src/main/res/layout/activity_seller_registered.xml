@@ -72,21 +72,20 @@
                     android:layout_height="wrap_content"/>
 
 
-                <Button
+                <soup.neumorphism.NeumorphButton
 
                     android:id="@+id/create_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="34dp"
-                    android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:layout_marginBottom="30dp"
-                    android:background="@drawable/btn"
-                    android:text="@string/createAccount"
+                    app:neumorph_shadowElevation="6dp"
+                    app:neumorph_shadowColorLight="#fff"
+                    style="@style/Widget.Neumorph.Button"
+                    android:layout_width="match_parent"
                     android:textAllCaps="false"
-                    android:textColor="#fff">
-
-                </Button>
-
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Create Account"
+                    android:textColor="@color/white"
+                    app:neumorph_backgroundColor="@color/black" />
 
 
                 <TextView

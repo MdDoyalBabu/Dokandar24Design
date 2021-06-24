@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#3B000000"
+    android:background="@color/white"
     tools:context=".SellerProfileActivity.ProfileActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -24,6 +24,7 @@
         android:layout_height="wrap_content">
 
         <de.hdodenhof.circleimageview.CircleImageView
+
             android:id="@+id/profileimage"
             android:layout_marginTop="15dp"
             android:src="@drawable/profileimage"
@@ -31,6 +32,7 @@
             android:layout_height="120dp"/>
 
         <TextView
+
             android:id="@+id/phone"
             android:textColor="@color/black"
             android:textSize="17sp"
@@ -80,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="@string/cashBalance"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -173,21 +175,25 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"/>
 
-    <Button
+    <soup.neumorphism.NeumorphButton
 
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:padding="10dp"
+        app:neumorph_insetStart="0dp"
+        app:neumorph_insetEnd="0dp"
+        app:neumorph_insetTop="0dp"
+        app:neumorph_insetBottom="2dp"
+
         android:id="@+id/create_shop"
-        android:textAllCaps="false"
-        android:background="@drawable/create_online_shop_btn"
-        android:layout_marginTop="15dp"
-        android:text="@string/createAnOnlineShop"
+        style="@style/Widget.Neumorph.Button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-
-
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Create Online Shop"
+        app:neumorph_shapeType="pressed"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:neumorph_backgroundColor="@color/white" />
 
 
 </LinearLayout>

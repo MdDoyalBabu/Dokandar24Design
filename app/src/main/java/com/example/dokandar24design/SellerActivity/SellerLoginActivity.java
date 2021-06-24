@@ -1,6 +1,7 @@
 package com.example.dokandar24design.SellerActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -20,11 +21,16 @@ public class SellerLoginActivity extends AppCompatActivity {
     private Button login;
     private EditText number,password;
     private TextView forgetPassword,createAccount;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller_login);
+
+
+
+        titleMethod();
 
         initi();
 
@@ -38,6 +44,16 @@ public class SellerLoginActivity extends AppCompatActivity {
         });
 
 
+
+    }
+
+    private void titleMethod() {
+
+            mToolbar=findViewById(R.id.login_appbar);
+            setSupportActionBar(mToolbar);
+            getSupportActionBar().setTitle("Login");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
 
     }
 

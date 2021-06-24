@@ -43,7 +43,7 @@ public class AgentLoginActivity extends AppCompatActivity {
 
 
     private void init() {
-        login=findViewById(R.id.login_button_id);
+        login=findViewById(R.id.agent_login_id);
         number=findViewById(R.id.phoneNumber);
         password=findViewById(R.id.password);
         createAccount=findViewById(R.id.create_account_agent);

@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     android:background="#DDD6D6"
     tools:context=".SellerBalanceActivity.WithdrawBalanceActivity">
 
+    <include
+        layout="@layout/appbar_layout"
+        android:id="@+id/withdraw_appbar"
+        />
 
     <ScrollView
 
+        android:layout_below="@id/withdraw_appbar"
         android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -63,14 +67,40 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
-                <EditText
-                    android:id="@+id/withdraw_select"
-                    android:layout_marginTop="5dp"
-                    android:hint="Select Withdraw type"
-                    android:padding="12dp"
+
+                <soup.neumorphism.NeumorphCardView
+
+
+                    app:neumorph_shapeType="basin"
+                    app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                     android:background="@drawable/border"
+                    style="@style/Widget.Neumorph.CardView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp">
+
+
+
+                    <EditText
+
+
+                        android:hint="@string/selectype"
+                        android:id="@+id/withdraw_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textCursorDrawable="@drawable/cursor_layout" />
+
+
+                </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
 
                 <TextView
                     android:layout_marginTop="20dp"
@@ -81,14 +111,39 @@
                     android:layout_height="wrap_content"/>
 
 
-                <EditText
-                    android:id="@+id/amount"
-                    android:layout_marginTop="10dp"
-                    android:hint="Enter Amount"
-                    android:padding="12dp"
+
+                <soup.neumorphism.NeumorphCardView
+
+
+                    app:neumorph_shapeType="basin"
+                    app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                     android:background="@drawable/border"
+                    style="@style/Widget.Neumorph.CardView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp">
+
+                    <EditText
+
+
+                        android:inputType="numberDecimal"
+                        android:hint="@string/enter_amount"
+                        android:id="@+id/amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textCursorDrawable="@drawable/cursor_layout" />
+
+
+                </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
 
                 <Button
 

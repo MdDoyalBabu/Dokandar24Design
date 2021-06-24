@@ -43,50 +43,97 @@
                     android:layout_height="wrap_content"/>
 
 
+                <soup.neumorphism.NeumorphCardView
 
-                <EditText
 
-                    android:inputType="text"
-                    android:layout_marginTop="35dp"
-                    android:id="@+id/name"
-                    android:hint="@string/enter_your_name"
-                    android:padding="15dp"
+                    app:neumorph_shapeType="basin"
+                    app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                    android:background="@drawable/border"
+                    style="@style/Widget.Neumorph.CardView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp">
 
-                <EditText
-                    android:inputType="number"
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/phoneNumber"
-                    android:hint="@string/enter_your_phone_number"
-                    android:padding="15dp"
+
+                    <EditText
+
+                        android:inputType="number"
+                        android:hint="@string/enter_your_name"
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textCursorDrawable="@drawable/cursor_layout" />
+
+
+                </soup.neumorphism.NeumorphCardView>
+                <soup.neumorphism.NeumorphCardView
+
+
+                    app:neumorph_shapeType="basin"
+                    app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                    android:background="@drawable/border"
+                    style="@style/Widget.Neumorph.CardView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-                <EditText
-                    android:inputType="numberPassword"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/password"
-                    android:hint="@string/password"
-                    android:padding="15dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp">
+
+
+                    <EditText
+
+                        android:inputType="number"
+                        android:hint="@string/enter_your_phone_number"
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textCursorDrawable="@drawable/cursor_layout" />
+
+
+                </soup.neumorphism.NeumorphCardView>
+                <soup.neumorphism.NeumorphCardView
+
+
+                    app:neumorph_shapeType="basin"
+                    app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                    android:background="@drawable/border"
+                    style="@style/Widget.Neumorph.CardView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp">
 
 
-                <Button
+                    <EditText
+
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/password"
+                        android:inputType="number"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textCursorDrawable="@drawable/cursor_layout" />
+
+
+                </soup.neumorphism.NeumorphCardView>
+                <soup.neumorphism.NeumorphButton
 
                     android:id="@+id/create_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="34dp"
-                    android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:layout_marginBottom="30dp"
-                    android:background="@drawable/btn"
-                    android:text="@string/createAccount"
-                    android:textAllCaps="false"
-                    android:textColor="#fff">
-
-                </Button>
+                    app:neumorph_shadowElevation="6dp"
+                    app:neumorph_shadowColorLight="#fff"
+                    style="@style/Widget.Neumorph.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Registered"
+                    android:textColor="@color/white"
+                    app:neumorph_backgroundColor="@color/black" />
 
 
 
