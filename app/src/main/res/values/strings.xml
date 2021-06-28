@@ -101,18 +101,18 @@
     <string name="accept_order">Accept Order</string>
     <string name="successfully_delivery_order">Successfully Delivery Order</string>
     <string name="add_product_image">Add Product Image</string>
-    <string name="product_name">Product Name</string>
+    <string name="product_name1">Product Name</string>
     <string name="description">Description</string>
     <string name="discount">Discount %</string>
     <string name="from">From</string>
     <string name="to">To</string>
     <string name="add">ADD</string>
-    <string name="price">Price</string>
+    <string name="price">Price : 200tk</string>
     <string name="open">Open navigation</string>
     <string name="close">Close navigation</string>
-    <string name="enter_your_phone_number">Enter Your Phone Number</string>
+    <string name="enter_your_phone_number"> Phone Number</string>
     <string name="name1">name</string>
-    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_name1">Enter Your Name</string>
     <string name="registered">Registered</string>
     <string name="one_1000">1000</string>
     <string name="withdraw_balance">Withdraw Balance</string>
@@ -136,6 +136,9 @@
     <string name="password">Password</string>
     <string name="name_1">Name</string>
     <string name="enter_amount">Enter Amount</string>
+    <string name="deleviery_boy">Deleviery Boy</string>
+    <string name="product_name">Product Name</string>
+    <string name="enter_your_name">Enter Your Name</string>
 
 
 </resources>

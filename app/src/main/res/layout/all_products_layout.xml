@@ -13,6 +13,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:background="@color/blackDark"
             android:layout_margin="10dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -33,7 +34,7 @@
                 android:layout_height="31dp"
                 android:layout_gravity="center"
                 android:text="@string/dokandar_24_com"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -44,7 +45,7 @@
                 android:layout_height="31dp"
                 android:layout_gravity="center"
                 android:text="@string/price"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 

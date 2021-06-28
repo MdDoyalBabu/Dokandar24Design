@@ -13,7 +13,6 @@
         android:id="@+id/sendBalance_appbar"
         />
 
-
     <ScrollView
         android:layout_below="@id/sendBalance_appbar"
         android:layout_width="match_parent"

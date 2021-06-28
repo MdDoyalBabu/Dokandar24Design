@@ -27,7 +27,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_profile);
 
-     //   titleMethod();
+        titleMethod();
 
         initi();
 
@@ -45,7 +45,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
 
     private void titleMethod() {
 
-        mToolbar=findViewById(R.id.login_appbar);
+        mToolbar=findViewById(R.id.seller_update_profile_appbar);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setTitle("UpDate Profile");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

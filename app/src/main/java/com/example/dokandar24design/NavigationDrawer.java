@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -12,14 +14,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.dokandar24design.Adapter.AllProductsAdapter.HomeAdapter;
 import com.example.dokandar24design.AgentActivity.AgentLoginActivity;
 import com.example.dokandar24design.AgentActivity.AgentRegisteredActivity;
 import com.example.dokandar24design.AgetProfileMainActivity.AgentUpdateProfileActivity;
+import com.example.dokandar24design.Model.AllProducts.HomeModel;
 import com.example.dokandar24design.SellerActivity.SellerLoginActivity;
 import com.example.dokandar24design.SellerActivity.SellerRegisteredActivity;
 import com.example.dokandar24design.SellerProfileActivity.UpdateProfileActivity;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class NavigationDrawer extends AppCompatActivity {
 
@@ -27,6 +34,10 @@ public class NavigationDrawer extends AppCompatActivity {
     private MaterialToolbar toolbar;
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
+    private RecyclerView recyclerView;
+
+    private HomeAdapter homeAdapter;
+    private List<HomeModel> list;
 
 
     @Override
@@ -35,8 +46,24 @@ public class NavigationDrawer extends AppCompatActivity {
         setContentView(R.layout.activity_navigation_drawer);
 
         toolbar = findViewById(R.id.tollbar);
-        navigationView = findViewById(R.id.navigationView);
-        drawerLayout = findViewById(R.id.drawerLayout);
+
+
+        getlist();
+
+        init();
+
+
+        recyclerView.setHasFixedSize(true);
+        GridLayoutManager layoutManager=new GridLayoutManager(this,2);
+        layoutManager.setOrientation(RecyclerView.VERTICAL);
+        recyclerView.setLayoutManager(layoutManager);
+
+        homeAdapter=new HomeAdapter(this,list);
+        recyclerView.setAdapter(homeAdapter) ;
+
+
+
+
 
 
         toolbar.setOnClickListener(new View.OnClickListener() {
@@ -121,6 +148,45 @@ public class NavigationDrawer extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    private void getlist() {
+
+
+        list=new ArrayList<>();
+
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+
+
+
+
+    }
+
+    private void init() {
+
+        navigationView = findViewById(R.id.navigationView);
+        drawerLayout = findViewById(R.id.drawerLayout);
+        recyclerView = findViewById(R.id.recyclerVIew_home_id);
 
     }
 }

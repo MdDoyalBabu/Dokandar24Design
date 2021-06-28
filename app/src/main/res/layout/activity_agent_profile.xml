@@ -89,13 +89,14 @@
 
             <Button
 
+
                 android:id="@+id/shopcode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/line1"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="15dp"
-                android:background="@color/nil"
+                android:background="@drawable/style_btn"
                 android:text="@string/shopcode"
                 android:textColor="@color/white" />
 

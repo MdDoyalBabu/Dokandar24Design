@@ -27,7 +27,7 @@ public class SellerUpdateWithdrawSettingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller_update_withdraw_setting);
 
-        titleMethod();
+      //  titleMethod();
 
         init();
 
@@ -66,9 +66,9 @@ public class SellerUpdateWithdrawSettingActivity extends AppCompatActivity {
 
     private void titleMethod() {
 
-        mToolbar=findViewById(R.id.login_appbar);
+       //  mToolbar=findViewById(R.id.seller_update_profile_appbar);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("Login");
+        getSupportActionBar().setTitle(" UpDate Profile");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 

@@ -1,6 +1,7 @@
 package com.example.dokandar24design.AgentActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ public class AgentLoginActivity extends AppCompatActivity {
     private Button login;
     private EditText number,password;
     private TextView forgetPassword,createAccount;
+    private Toolbar mToolbar;
 
 
     @Override
@@ -28,6 +30,7 @@ public class AgentLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agent_login);
 
+        titleMethod();
 
         init();
 
@@ -38,6 +41,14 @@ public class AgentLoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+    }
+
+    private void titleMethod() {
+
+        mToolbar=findViewById(R.id.agent_login_appbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle(" Agent Login");
 
     }
 

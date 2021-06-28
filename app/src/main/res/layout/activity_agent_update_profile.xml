@@ -13,8 +13,6 @@
         android:id="@+id/update_appbar"
         />
 
-
-
     <ScrollView
         android:layout_below="@id/update_appbar"
         android:layout_marginTop="0dp"
@@ -41,6 +39,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:layout_marginLeft="12dp"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:layout_marginTop="2dp"
@@ -96,6 +95,7 @@
 
 
                 <TextView
+                    android:layout_marginLeft="12dp"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:layout_marginTop="5dp"
@@ -136,6 +136,7 @@
 
                 <TextView
 
+                    android:layout_marginLeft="12dp"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:layout_marginTop="10dp"
@@ -175,7 +176,7 @@
 
 
                 <TextView
-
+                    android:layout_marginLeft="12dp"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:layout_marginTop="10dp"
@@ -212,7 +213,7 @@
 
                 </soup.neumorphism.NeumorphCardView>
                 <TextView
-
+                    android:layout_marginLeft="12dp"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:layout_marginTop="10dp"
@@ -273,6 +274,14 @@
 
 
         </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
     </ScrollView>
 
 

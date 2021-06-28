@@ -1,6 +1,7 @@
 package com.example.dokandar24design.SellerActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,12 +20,15 @@ public class SellerRegisteredActivity extends AppCompatActivity {
     private EditText name,phone,password;
     private Button  reg_btn;
     private TextView textViewLogin;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller_registered);
 
+
+        titleMethod();
 
         initi();
 
@@ -35,6 +39,14 @@ public class SellerRegisteredActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+    }
+
+    private void titleMethod() {
+
+        mToolbar=findViewById(R.id.seller_reg_appbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle(" Seller Registered");
 
     }
 

@@ -16,6 +16,7 @@
 
 
         <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appabr_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -32,16 +33,33 @@
 
 
         </com.google.android.material.appbar.AppBarLayout>
-        <TextView
-            android:textColor="@color/white"
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/appabr_id"
+            android:id="@+id/recyclerVIew_home_id"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:fontFamily="cursive"
-            android:gravity="center"
-            android:text="Donakdar Navighation Drawer"
-            android:textAlignment="center"
-            android:textSize="50sp" />
+            android:layout_height="match_parent"/>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rootlayout"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.example.dokandar24design.MovableFloatingActionButton
+
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/cart_icon" />
+
+
+        </FrameLayout>
 
 
 

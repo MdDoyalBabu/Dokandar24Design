@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dokandar24Design">
-        <activity android:name=".SellerProfileActivity.SellerUpdateWithdrawSettingActivity"></activity>
+        <activity android:name=".DeliveryBoyActivity.DeliveryBoyUpdateProfileActivity"></activity>
+        <activity android:name=".DeliveryBoyActivity.DeliveryRegActivity" />
+        <activity android:name=".DeliveryBoyActivity.DeliveryLoginActivity" />
+        <activity android:name=".SellerProfileActivity.SellerUpdateWithdrawSettingActivity" />
         <activity android:name=".AgetProfileMainActivity.AgentUpdateProfileActivity" />
         <activity android:name=".AgetProfileMainActivity.AgentProfileActivity" />
         <activity android:name=".AgentActivity.AgentRegisteredActivity" />

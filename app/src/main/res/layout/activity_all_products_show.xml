@@ -6,7 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".SellerActivity.AllProductsShowActivity">
 
+
+    <include
+        layout="@layout/appbar_layout"
+        android:id="@+id/all_product_appbar"
+        />
+
+
+
+
     <ScrollView
+        android:layout_below="@id/all_product_appbar"
         android:id="@+id/scrollView_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -97,7 +107,7 @@
                 android:layout_below="@id/line1"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="15dp"
-                android:background="@color/nil"
+                android:background="@drawable/style_btn"
                 android:text="@string/shopcode"
                 android:textColor="@color/white" />
 

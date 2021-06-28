@@ -8,14 +8,12 @@
     android:background="@color/white"
     tools:context=".SellerProfileActivity.ProfileActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <include
+        layout="@layout/appbar_layout"
+        android:id="@+id/seller_profile_appbar"
+        />
+
+
 
     <LinearLayout
         android:layout_marginBottom="10dp"
@@ -177,11 +175,6 @@
 
     <soup.neumorphism.NeumorphButton
 
-        app:neumorph_insetStart="0dp"
-        app:neumorph_insetEnd="0dp"
-        app:neumorph_insetTop="0dp"
-        app:neumorph_insetBottom="2dp"
-
         android:id="@+id/create_shop"
         style="@style/Widget.Neumorph.Button"
         android:layout_width="wrap_content"
@@ -189,11 +182,15 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Create Online Shop"
-        app:neumorph_shapeType="pressed"
         android:textAllCaps="false"
-        android:textSize="20sp"
         android:textColor="@color/black"
-        app:neumorph_backgroundColor="@color/white" />
+        android:textSize="20sp"
+        app:neumorph_backgroundColor="@color/white"
+        app:neumorph_insetBottom="2dp"
+        app:neumorph_insetEnd="0dp"
+        app:neumorph_insetStart="0dp"
+        app:neumorph_insetTop="0dp"
+        app:neumorph_shapeType="pressed" />
 
 
 </LinearLayout>

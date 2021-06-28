@@ -1,6 +1,7 @@
 package com.example.dokandar24design.AgentActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -17,6 +18,7 @@ public class AgentRegisteredActivity extends AppCompatActivity {
     private EditText name,phone,password;
     private Button reg_btn;
     private TextView textViewLogin;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +26,17 @@ public class AgentRegisteredActivity extends AppCompatActivity {
         setContentView(R.layout.activity_agent_registered);
 
 
+        titleMethod();
+
         init();
 
+    }
+
+    private void titleMethod() {
+
+        mToolbar=findViewById(R.id.agent_reg_appbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle(" Agent Registered");
     }
 
 

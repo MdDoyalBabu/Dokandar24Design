@@ -19,7 +19,7 @@ public class CreateShopActivity extends AppCompatActivity {
 
 
     private EditText referalShop,shopName,shopDescription,shopLocation;
-    private Button shopLogo,shopBanner,createShop;
+    private Button shopLogo,shopBanner,createShopp;
     protected CheckBox checkBox;
 
 
@@ -31,7 +31,7 @@ public class CreateShopActivity extends AppCompatActivity {
 
         initi();
 
-        createShop.setOnClickListener(new View.OnClickListener() {
+        createShopp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(CreateShopActivity.this,ShopActivity.class);
@@ -54,7 +54,7 @@ public class CreateShopActivity extends AppCompatActivity {
 
         shopLogo=findViewById(R.id.shopLogo);
         shopBanner=findViewById(R.id.shopBanner);
-        createShop=findViewById(R.id.create_shop);
+        createShopp=findViewById(R.id.create_shopp);
 
     }
 }

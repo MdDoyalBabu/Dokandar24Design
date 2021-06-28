@@ -49,9 +49,9 @@ public class SellerLoginActivity extends AppCompatActivity {
 
     private void titleMethod() {
 
-            mToolbar=findViewById(R.id.login_appbar);
+            mToolbar=findViewById(R.id.seller_login_appbar);
             setSupportActionBar(mToolbar);
-            getSupportActionBar().setTitle("Login");
+            getSupportActionBar().setTitle(" Seller Login");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
 
