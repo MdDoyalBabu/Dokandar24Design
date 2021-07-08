@@ -40,9 +40,9 @@
     <string name="downloadInvoice">DOWNLOAD INVOICE -</string>
 
 
-    <string name="phone">Phone :</string>
-    <string name="name">Name :</string>
-    <string name="joiningDate">Joining Date :</string>
+    <string name="phone">Phone : 01744431962</string>
+    <string name="name">Name : FD Ferdous Rahman (Doyal)</string>
+    <string name="joiningDate">Joining Date : 10-05-21</string>
     <string name="cashBalance">Cash Balance : 9,000</string>
     <string name="addBalance">Add Balance </string>
     <string name="sendBalance">Send Balance</string>

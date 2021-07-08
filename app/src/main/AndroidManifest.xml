@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.dokandar24design">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dokandar24Design">
-        <activity android:name=".DeliveryBoyActivity.DeliveryBoyUpdateProfileActivity"></activity>
+        <activity android:name=".ProductsViewActivity.ViewActivity"></activity>
+        <activity android:name=".DeliveryBoyActivity.DeliveryBoyUpdateProfileActivity" />
         <activity android:name=".DeliveryBoyActivity.DeliveryRegActivity" />
         <activity android:name=".DeliveryBoyActivity.DeliveryLoginActivity" />
         <activity android:name=".SellerProfileActivity.SellerUpdateWithdrawSettingActivity" />
@@ -31,9 +33,6 @@
         <activity android:name=".SellerProfileActivity.ProfileActivity" />
         <activity android:name=".SellerActivity.SellerRegisteredActivity" />
         <activity android:name=".SellerActivity.SellerLoginActivity" />
-        <activity
-            android:name=".ui.login.SellerLoginActivity"
-            android:label="@string/title_activity_seller_login" />
         <activity android:name=".NavigationDrawer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

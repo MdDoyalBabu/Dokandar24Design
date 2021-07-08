@@ -18,6 +18,9 @@ import com.example.dokandar24design.Adapter.AllProductsAdapter.HomeAdapter;
 import com.example.dokandar24design.AgentActivity.AgentLoginActivity;
 import com.example.dokandar24design.AgentActivity.AgentRegisteredActivity;
 import com.example.dokandar24design.AgetProfileMainActivity.AgentUpdateProfileActivity;
+import com.example.dokandar24design.DeliveryBoyActivity.DeliveryBoyUpdateProfileActivity;
+import com.example.dokandar24design.DeliveryBoyActivity.DeliveryLoginActivity;
+import com.example.dokandar24design.DeliveryBoyActivity.DeliveryRegActivity;
 import com.example.dokandar24design.Model.AllProducts.HomeModel;
 import com.example.dokandar24design.SellerActivity.SellerLoginActivity;
 import com.example.dokandar24design.SellerActivity.SellerRegisteredActivity;
@@ -54,7 +57,7 @@ public class NavigationDrawer extends AppCompatActivity {
 
 
         recyclerView.setHasFixedSize(true);
-        GridLayoutManager layoutManager=new GridLayoutManager(this,2);
+        GridLayoutManager layoutManager=new GridLayoutManager(this,3);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
 
@@ -101,6 +104,19 @@ public class NavigationDrawer extends AppCompatActivity {
                 else if (item.getItemId() == R.id.agentUpdateProfile) {
                     startActivity(new Intent(NavigationDrawer.this, AgentUpdateProfileActivity.class));
                 }
+                else if (item.getItemId() == R.id.delivery_login_menu) {
+                    startActivity(new Intent(NavigationDrawer.this, DeliveryLoginActivity.class));
+                }
+
+                else if (item.getItemId() == R.id.delivery_reg_menu) {
+                    startActivity(new Intent(NavigationDrawer.this, DeliveryRegActivity.class));
+                }
+
+                else if (item.getItemId() == R.id.deliveryBoyagentUpdateProfile) {
+                    startActivity(new Intent(NavigationDrawer.this, DeliveryBoyUpdateProfileActivity.class));
+                }
+
+
 
                 else {
                     Toast.makeText(NavigationDrawer.this, "Others", Toast.LENGTH_SHORT).show();
@@ -156,28 +172,49 @@ public class NavigationDrawer extends AppCompatActivity {
 
         list=new ArrayList<>();
 
-        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
-        list.add(new HomeModel(R.drawable.logo,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shirt,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shoss,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shir20t,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shirt,"Dokandar24","100tk"));
+
+        list.add(new HomeModel(R.drawable.sanglass,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.product,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.laptop,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shoss,"Dokandar24","100tk"));
+
+        list.add(new HomeModel(R.drawable.shoss,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shir20t,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shirt,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shoss,"Dokndar24","100tk"));
+
+        list.add(new HomeModel(R.drawable.sanglass,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.product,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.laptop,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shoss,"Dokandar24","100tk"));
 
 
+        list.add(new HomeModel(R.drawable.shirt,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shoss,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shir20t,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.image_prodcuts,"Dokandar24","100tk"));
+
+        list.add(new HomeModel(R.drawable.sanglass,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.product,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.laptop,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shoss,"Dokandar24","100tk"));
+
+
+
+        list.add(new HomeModel(R.drawable.shoss,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shoss,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shirt,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shoss,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shir20t,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shirt,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shirt,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shoss,"Dokndar24","100tk"));
+        list.add(new HomeModel(R.drawable.shirt,"Dokandar24","100tk"));
+        list.add(new HomeModel(R.drawable.shoss,"Dokandar24","100tk"));
 
 
     }

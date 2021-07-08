@@ -52,8 +52,6 @@
 
 
                 <soup.neumorphism.NeumorphCardView
-
-
                     app:neumorph_shapeType="basin"
                     app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                     android:background="@drawable/border"

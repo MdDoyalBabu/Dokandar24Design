@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
-    android:background="#424242"
+    android:background="#630022"
     tools:context=".NavigationDrawer">
 
 
@@ -52,6 +52,7 @@
 
             <com.example.dokandar24design.MovableFloatingActionButton
 
+                android:background="@color/dark2"
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

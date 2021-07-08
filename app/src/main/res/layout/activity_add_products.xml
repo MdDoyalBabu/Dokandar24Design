@@ -190,6 +190,7 @@
 
             <soup.neumorphism.NeumorphButton
 
+                android:layout_marginBottom="10dp"
                 android:id="@+id/add_btn"
                 android:layout_marginTop="20dp"
                 app:neumorph_shadowElevation="6dp"

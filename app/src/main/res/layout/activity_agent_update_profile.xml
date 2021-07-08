@@ -40,7 +40,7 @@
 
                 <TextView
                     android:layout_marginLeft="12dp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/colorTextview"
                     android:textSize="20sp"
                     android:layout_marginTop="2dp"
                     android:text="@string/email"
@@ -96,7 +96,7 @@
 
                 <TextView
                     android:layout_marginLeft="12dp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/colorTextview"
                     android:textSize="20sp"
                     android:layout_marginTop="5dp"
                     android:text="@string/thana"
@@ -137,7 +137,7 @@
                 <TextView
 
                     android:layout_marginLeft="12dp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/colorTextview"
                     android:textSize="20sp"
                     android:layout_marginTop="10dp"
                     android:text="@string/area"
@@ -177,7 +177,7 @@
 
                 <TextView
                     android:layout_marginLeft="12dp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/colorTextview"
                     android:textSize="20sp"
                     android:layout_marginTop="10dp"
                     android:text="@string/houseRoadNo"
@@ -214,7 +214,7 @@
                 </soup.neumorphism.NeumorphCardView>
                 <TextView
                     android:layout_marginLeft="12dp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/colorTextview"
                     android:textSize="20sp"
                     android:layout_marginTop="10dp"
                     android:text="@string/homeaddress"

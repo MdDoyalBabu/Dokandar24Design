@@ -1,6 +1,7 @@
 package com.example.dokandar24design.SellerActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -39,7 +40,7 @@ public class AllProductsShowActivity extends AppCompatActivity {
         init();
 
         recyclerView.setHasFixedSize(true);
-        LinearLayoutManager layoutManager=new LinearLayoutManager(this);
+        GridLayoutManager layoutManager=new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(layoutManager);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         productsAdapter=new ProductsAdapter(this,list);
@@ -67,18 +68,19 @@ public class AllProductsShowActivity extends AppCompatActivity {
     private void productList() {
 
         list=new ArrayList<>();
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
-        list.add(new ProductsModel(R.drawable.image_prodcuts,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.shoss,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.laptop,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.sanglass,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.laptop,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.sanglass,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.shoss,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.laptop,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.sanglass,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.laptop,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.shoss,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.laptop,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.sanglass,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.sanglass,"Dokandar24","2000"));
+        list.add(new ProductsModel(R.drawable.laptop,"Dokandar24","2000"));
     }
 }

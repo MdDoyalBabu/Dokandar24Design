@@ -6,6 +6,11 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+
+    <color name="colorTextview">#000810</color>
+
+
+
     <color name="white">#FFFFFFFF</color>
 
     <color name="dark">#534A4A</color>
@@ -15,8 +20,8 @@
     <color name="white2">#FFFFFF</color>
 
     <color name="blackDark">#433C3C</color>
-    <color name="nil">#0B7866</color>
-    <color name="red">#B10F46</color>
+    <color name="nil">#d25a4b</color>
+    <color name="red">#f82d49</color>
     <color name="green">#C1305322</color>
     <color name="yellow">#FDD835</color>
     <color name="dark2">#575652</color>
@@ -28,6 +33,11 @@
     <color name="colorAcent">#efeeee</color>
 
     <color name="darkBlack">#07040A</color>
+
+
+
+    <color name="before">#ffffff</color>
+    <color name="after">#E63A74</color>
 
 
 
